@@ -67,7 +67,7 @@ local product_price = product_info.PriceInRobux
 return tostring(product_price)
 end
 
-game = game or Ugc 
+game = game or Ugc -- game itself
 --[[
 Adding cloneref, only for requiring services
 ]]--
@@ -450,6 +450,8 @@ HintGui.Text = "Slap Farm Gui Loading... ( Loading Components )"
 --Checking if we are in dark realm
 if workspace:FindFirstChild("bobBoss") then
 
+local DarkRealm = Window:CreateTab("Dark Realm", 98952570395426)
+
 --[[
 
 Dark Realm Slap Farming
@@ -719,6 +721,13 @@ Creating Tabs!
 
 local Recommends = Window:CreateTab("Recommended", 98952570395426)
 local AutoFarm = Window:CreateTab("Auto-Farm", 98952570395426)
+
+--[[
+
+Auto Reccomendation
+
+]]--
+
 
 local Label = Recommends:CreateLabel("There's will appear farms that recommended to you! { Depends on your amount of slaps }")
 
@@ -2463,9 +2472,7 @@ Other tabs
 
 -- Checking if window created
 
-if Window ~= nil then
-Other = Window:CreateTab("Other", 12809025337)
-Credits = Window:CreateTab("Credits", 0)
+
 
 local FakeSlapsLabel = Other:CreateLabel("Change slaps")
 
