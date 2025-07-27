@@ -34,18 +34,18 @@ Using coregui, but if executor can't access coregui, workspace will be used
 pcall(function()
     local host = game:GetService("CoreGui") or game:GetService("Workspace")
     HintGui = Instance.new("Hint")
-    HintGui.Text = "Slap Farm Gui Loading... ( Loading Script )"
+    HintGui.Text = "Stmkass Farm Gui Loading... ( Loading Script )"
     HintGui.Name = "HintGui"
     HintGui.Parent = host
 end)
 
 
-HintGui.Text = "Slap Farm Gui Loading... ( Loading Variables & Functions )"
+HintGui.Text = "Stmkass Farm Gui Loading... ( Loading Variables & Functions )"
 --[[
 Global variables ( and some functions ). The link to script is required for snow farming.
 ]]--
 _G.VerVerVer = "4.4" -- Version here
-_G.Link = "https://raw.githubusercontent.com/Pro666Pro/OpenSourceScripts/refs/heads/main/SlapFarmGui/Versions/(v4.4).luau" -- Or whatever your link is, this is required for snow farm and other serverhop farms
+_G.Link = "https://raw.githubusercontent.com/stmka/stmkass/refs/heads/main/V4.4.luau" -- Or whatever your link is, this is required for snow farm and other serverhop farms
 _G.IsUserPremium = true -- This is responsible for whether the user has a premium or not, don't change it bucko 🤠
 _G.IsUserFollowed = false -- This is responsible for whether the user is followed or not, don't change it too
 _G.CanSlap = true -- Can slap? ( Bot Mode, Don't set false or bot won't be able to slap :[ )
@@ -56,7 +56,7 @@ _G.BotAvoid = false -- Standart value of bot configuration
 _G.BotJump = false -- Standart value of bot configuration
 _G.BotReg = 8 or "8" -- Standart value of bot configuration
 _G.BotIntelligence = "High" -- Standart value of bot configuration
-_G.FakeNametag = "Nexer1234_AnotherAlt" -- Standart value of fake nametag
+_G.FakeNametag = "Stmkass" -- Standart value of fake nametag
 _G.FakeSlaps = 0 or "0" -- Standart value of fake slaps
 _G.BlinkMixedBallerPlace = "Default Arena" -- Standart value
 
@@ -67,7 +67,7 @@ local product_price = product_info.PriceInRobux
 return tostring(product_price)
 end
 
-game = game or Ugc -- game itself
+game = game or Ugc 
 --[[
 Adding cloneref, only for requiring services
 ]]--
@@ -450,8 +450,6 @@ HintGui.Text = "Slap Farm Gui Loading... ( Loading Components )"
 --Checking if we are in dark realm
 if workspace:FindFirstChild("bobBoss") then
 
-local DarkRealm = Window:CreateTab("Dark Realm", 98952570395426)
-
 --[[
 
 Dark Realm Slap Farming
@@ -721,25 +719,6 @@ Creating Tabs!
 
 local Recommends = Window:CreateTab("Recommended", 98952570395426)
 local AutoFarm = Window:CreateTab("Auto-Farm", 98952570395426)
-local ServerHopFarm = Window:CreateTab("ServerHop-Farm", 98952570395426)
-local AnyGlove = Window:CreateTab("Any Glove", 98952570395426)
-local Dual = Window:CreateTab("Dual", 98952570395426)
-local Replica = Window:CreateTab("Replica", 98952570395426)
-local Engineer = Window:CreateTab("Engineer", 98952570395426)
-local Cherry = Window:CreateTab("Cherry", 98952570395426)
-local Baller = Window:CreateTab("Baller", 98952570395426)
-local Blink = Window:CreateTab("Blink", 98952570395426)
-local Ferryman = Window:CreateTab("Ferryman", 98952570395426)
-local DarkRealm = Window:CreateTab("Dark Realm", 98952570395426)
-local Error = Window:CreateTab("Error", 98952570395426)
-local Mixed = Window:CreateTab("Mixed", 98952570395426)
-
---[[
-
-Auto Reccomendation
-
-]]--
-
 
 local Label = Recommends:CreateLabel("There's will appear farms that recommended to you! { Depends on your amount of slaps }")
 
